@@ -2,10 +2,10 @@ steal("can","can/construct/super",function(can){
 
 
 	/**
-	 * @class srchr/models/twitter
+	 * @constructor srchr/models/twitter
 	 * @inherits can.Model
 	 * @test srchr/models/test.html
-	 * @parent index
+	 * @parent srchr
 	 * 
 	 * Provides `Twitter.findAll(params, success(results))` to retrieve
 	 * twitter results like:
@@ -16,6 +16,7 @@ steal("can","can/construct/super",function(can){
 	 * 
 	 */
 	return can.Model({
+		/* @static */
 		findAll : function(params, success, error){
 			return $.ajax({
 				url : "http://search.twitter.com/search.json",
