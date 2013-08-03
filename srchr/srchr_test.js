@@ -20,15 +20,15 @@ steal('funcunit',
 
 	test('Search shows results in selected service', function() {
 
-		S('input[value=Twitter]').click();
+		S('input[value=Reddit]').click();
 		S('#query').click().type('Dogs\r');
 
 		// wait until there are 2 results
-		S("#Twitter li").exists(function() {
+		S("#Reddit li").exists(function() {
 
-			ok(true, "We see results in twitter");
+			ok(true, "We see results in Reddit");
 			// make sure we see dogs in the history
-			var r = /Dogs\s+t/;
+			var r = /Dogs\s+r/i;
 
 			ok(r.test(S("#history li.selected").text()), "we see dogs correctly");
 
@@ -42,7 +42,7 @@ steal('funcunit',
 	})
 
 	test('Switching results tabs', function() {
-		S('input[value=Twitter]').click();
+		S('input[value=Reddit]').click();
 		S('input[value=Flickr]').click();
 
 		S('#query').click().type('Cats\r');
@@ -51,13 +51,13 @@ steal('funcunit',
 			return size > 1
 		}, function() {
 
-			equals(S('#Flickr').css('display'), 'block', 'Twitter results panel is visible')
+			equals(S('#Flickr').css('display'), 'block', 'Reddit results panel is visible')
 
 		})
 
-		S('#results li:contains(Twitter) a').exists().click(function() {
-			equals(S('#Flickr').css('display'), 'none', 'Twitter results panel is hidden')
-			equals(S('#Twitter').css('display'), 'block', 'Flickr results panel is visible')
+		S('#results li:contains(Reddit) a').exists().click(function() {
+			equals(S('#Flickr').css('display'), 'none', 'Flickr results panel is hidden')
+			equals(S('#Reddit').css('display'), 'block', 'Reddit results panel is visible')
 		})
 	})
 
@@ -65,8 +65,8 @@ steal('funcunit',
 		S('#history li:contains(Dogs)').click(function() {
 			equals(S('#query').val(), "Dogs", 'Dogs was put back into the query field')
 		});
-		S("#Twitter li.result").exists(function() {
-			ok(true, "We see results in twitter");
+		S("#Reddit li.result").exists(function() {
+			ok(true, "We see results in Reddit");
 		})
 	})
 

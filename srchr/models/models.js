@@ -18,7 +18,7 @@ steal('./flickr.js','./google.js',
 		/* @static */
 		Flickr: Flickr,
 		Google: Google,
-		Twitter: Twitter,
+		// Twitter: Twitter,
 		Wikipedia: Wikipedia,
 		Reddit: Reddit
 	};
