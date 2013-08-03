@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<title>
+			JavaScriptMVC
+		</title>
+		<link rel="shortcut icon" href="../documentjs/jmvcdoc/images/favicon.ico">
+	</head>
+	<body>
+		<div id='documentation'>
+			<div id='top'>
+				<div class="content">
+					<div id="searchRoundCorners">
+						<input id='search' type='input' disabled='true'>
+					</div>
+					<div id='defaults'>
+						<ul id="menu" class="ui-menu">
+							<li class="ui-menu-item">
+								<a class="menuLink" href="#!"><span class="menuSpan">Home</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id='bottom'>
+				<div id='nav'>
+					<a>Loading ...</a>
+				</div>
+				<div id='doc_container'>
+					<div id='doc'>
+						<h2>Srchr</h2>
+
+<p>Srchr is a crowdsourced exercise in collecting JavaScript 
+wisdom. For more information about the project, visit 
+http://blog.rebeccamurphey.com/2010/03/15/srchr-crowdsourcing-javascript-wisdom/.</p>
+
+<p>This is a JavaScriptMVC version created by <a href="http://bitovi.com">Bitovi</a>.  </p>
+
+<h2>Installing</h2>
+
+<p>Clone srchr and install its submodules:</p>
+
+<pre><code>git clone git://github.com/bitovi/srchr srchr
+cd srchr
+git submodule update --init --recursive
+</code></pre>
+
+<h2>Running</h2>
+
+<p>Open <a href="srchr/srchr.html">srchr/srchr.html</a>.</p>
+
+<h2>Testing</h2>
+
+<p>In your browser, open [//srchr/test.html]. To run it automated, open an console to 
+the <code>srchr</code> folder and run:</p>
+
+<pre><code>./js funcunit/open/selenium http://localhost/srchr/srchr/test.html
+</code></pre>
+
+<p><em>Note: Replace http://localhost/srchr with the path to srchr.</em></p>
+
+<h2>Building</h2>
+
+<p>Open a console to the <code>srchr</code> folder and run:</p>
+
+<pre><code>./js srchr/scripts/build.js
+</code></pre>
+
+<p>Open <code>srchr/srchr.html</code> in a text editor and change:</p>
+
+<pre><code>&lt;script src='../steal/steal.js?srchr'&gt;  
+</code></pre>
+
+<p>to</p>
+
+<pre><code>&lt;script src='../steal/steal.production.js?srchr'&gt;  
+</code></pre>
+
+<p>Open <a href="srchr/srchr.html">srchr/srchr.html</a> in your browser.</p>
+					</div>
+					<div id="disqus_thread"></div>
+				</div>
+			</div>
+		</div>
+		<div id='low'>
+			<a href="http://bitovi.com" target="_blank">Generated with DocumentJS by Bitovi</a>
+		</div>
+		<script type='text/javascript'>
+			DOCS_LOCATION = "docs/" //adds searchData to this
+		</script>
+		<script type='text/javascript' src='../steal/steal.js?documentjs/jmvcdoc'></script>
+	</body>
+</html>

@@ -67,7 +67,7 @@ steal("funcunit", 'srchr/search', function(S, Search){
 			types: ["Google"]
 		});
 		
-		ok( $('input#cb_Google[type=checkbox]').is(":checked") , "Google is checked" )
+		ok( $('input#cb_Google[type=checkbox]').is(":checked") , "Google is checked" );
 		
 		
 	})

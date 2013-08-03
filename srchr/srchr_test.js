@@ -75,9 +75,8 @@ steal('funcunit',
 		for ( var i = S('#history li').size() - 1; i > -1; i-- ) {
 			S('#history li a.remove:eq(' + i + ')').click()
 		}
-
-		S('#history li').size(0)
-		ok(S('#history li').size(), 'All history entries were removed.')
+		// wait for all entries to be removed
+		S('#history li').size(0, 'All history entries were removed.');
 	})
 
 });

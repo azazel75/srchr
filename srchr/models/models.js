@@ -18,6 +18,7 @@ steal('./flickr.js','./google.js',
 		/* @static */
 		Flickr: Flickr,
 		Google: Google,
+		// Twitter no longer supported with 1.1
 		// Twitter: Twitter,
 		Wikipedia: Wikipedia,
 		Reddit: Reddit
